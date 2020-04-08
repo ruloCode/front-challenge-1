@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "name": "front-reto-1",
+  "builds": [{ "use": "@now/static-build", "src": "package.json" }],
+  "routes": [
+    {
+      "src": "(.*).js",
+      "dest": "/$1.js"
+    },
+    {
+      "src": "(.*).css",
+      "dest": "/$1.css"
+    },
+    {
+      "src": "(.*).jpg",
+      "dest": "/$1.jpg"
+    },
+    {
+      "src": "(.*).png",
+      "dest": "/$1.png"
+    },
+    {
+      "src": "(.*).json",
+      "dest": "/$1.json"
+    },
+
+    {
+      "src": "/.*",
+      "dest": "/src/index.html"
+    }
+  ]
+}
