@@ -23,10 +23,9 @@
       "src": "(.*).json",
       "dest": "/$1.json"
     },
-
     {
       "src": "/.*",
-      "dest": "/src/index.html"
+      "dest": "/public/index.html"
     }
   ]
 }
