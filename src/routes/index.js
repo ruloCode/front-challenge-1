@@ -1,13 +1,13 @@
 import Header from "../templates/Header";
 import Home from "../pages/Home";
-import Character from "../pages/Character";
+import Footer from "../pages/Footer";
 import NotFound from "../pages/NotFound";
 
 import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 const routes = {
   "/": Home,
-  "/:id": Character,
+  "/:id": Footer,
   "/contact": "Contacto",
 };
 

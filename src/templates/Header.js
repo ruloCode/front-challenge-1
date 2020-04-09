@@ -8,16 +8,21 @@ const Header = () => {
           </a>
         </h1>
       </div>
-      <div>
-        <ul class="Header-nav" >
-          <li><a class="active" href="#">Inicio</a></li>
-          <li><a href="#">Acerca</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+      <nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+
+        <menu class="Header-nav" >
+
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href="/">Acerca</a></li>
+            <li><a href="/">Servicios</a></li>
+            <li><a href="/">Productos</a></li>
+            <li><a href="/">Contacto</a></li>
+        </menu>
+        
        
-      </div>
+      </nav>
     </div>
   `;
   return view;

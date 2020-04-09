@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  transition: 1s;
 }
 
 .Header-nav li a {
@@ -19,18 +20,15 @@
   padding: 1em;
   margin: 0 0.5em;
   transition: 0.3s;
+  width: 100%;
 }
 
 .Header-nav li a.active {
   color: var(--background-2);
-  padding: 1em;
-  margin: 0 0.5em;
   background: var(--brand-color-1);
 }
 .Header-nav li a:hover {
   color: var(--background-2);
-  padding: 1em;
-  margin: 0 0.5em;
   background: var(--brand-color-1);
 }
 .logo {
@@ -40,4 +38,88 @@
 }
 .logo span {
   color: var(--brand-color-1);
+}
+label {
+  display: none;
+  font-size: 26px;
+  width: 26px;
+  cursor: pointer;
+  line-height: 46px;
+}
+#toggle {
+  display: none;
+}
+.burgerMenu {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.burgerMenu li {
+  background: blue;
+  right: 0;
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .Header-nav li a {
+    color: var(--dark-color-1);
+    padding: 0.5em;
+  }
+  .Header-main {
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Header-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    transition: 1s;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .Header-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header-nav li a {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #toggle:checked + label {
+    color: red;
+  }
+  #toggle:checked + .Header-nav {
+    transition: 1s;
+
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    right: 0;
+    background: rgba(226, 221, 221, 0.966);
+    padding: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: column;
+    opacity: 1;
+  }
 }
