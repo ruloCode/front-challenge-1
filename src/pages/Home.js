@@ -2,8 +2,10 @@ import getData from "../utils/getData";
 import Footer from "./Footer";
 import Card from "./Card";
 const Home = async () => {
-  const data = await getData();
-  console.log(data);
+  const API = "https://server-1.now.sh/company";
+
+  const data = await getData(API);
+  console.log(Object.keys(data).length);
   const view = `
     <div class="Home">
       <div class="titles-container">
