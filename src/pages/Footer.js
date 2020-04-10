@@ -1,4 +1,7 @@
+import { data } from "../utils/data";
+
 const Footer = ({ welcome, news, services }) => {
+  console.log(data);
   const view = `
     
     <div class="footer">
@@ -51,7 +54,7 @@ const Footer = ({ welcome, news, services }) => {
         </div>
         <a class="btn" href="#">Leer más</a>
       </div>
-  </div
+  </div>
   `;
   return view;
 };
