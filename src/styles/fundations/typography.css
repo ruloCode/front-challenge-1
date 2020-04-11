@@ -11,6 +11,7 @@
 .main-title {
   font-size: var(--font-size-h1);
   color: var(--dark-color-1);
+  text-transform: capitalize;
 }
 .main-subtitle {
   font-size: var(--font-size-h2);
