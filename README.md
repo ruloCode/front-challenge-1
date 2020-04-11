@@ -1,6 +1,7 @@
 # React base with fundations
 
 This project has been created only with Vanilla Js, CSS and HTML and the layout art.
+
 Is a beauty, responsive and clean landing page.
 
 
