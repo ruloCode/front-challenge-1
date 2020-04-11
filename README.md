@@ -2,11 +2,11 @@
 
 This project has been created only with Vanilla Js, CSS and HTML and the layout art.
 
+Is a beauty, responsive and clean landing page.
+
 
 ## View Demo
-![](/preview.png)
-
-
+[click here](https://front-reto-1.now.sh/ "Show Demo")
 ## Preview
 ![](/preview.png)
 
