@@ -5,7 +5,6 @@ const Home = async () => {
   const API = "https://server-1.now.sh/company";
 
   const data = await getData(API);
-  console.log(Object.keys(data).length);
   const view = `
     <div class="Home">
       <div class="titles-container">

@@ -1,7 +1,4 @@
-import { data } from "../utils/data";
-
-const Footer = ({ welcome, news, services }) => {
-  console.log(data);
+const Footer = ({ news, services }) => {
   const view = `
     
     <div class="footer">
@@ -9,11 +6,13 @@ const Footer = ({ welcome, news, services }) => {
         <h3 class="title">¡Bienvenido!</h3>
         <div>
             <p class="normal">
-              ${welcome}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione ut
+              vel! Debitis consequuntur dicta<span>consectetur</span> harum ducimus nulla quo.
             </p>
               <br/>
             <p class="normal">
-              ${welcome}
+            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Voluptates ratione ut
+            vel! Debitis consequuntur dicta reiciendis harum ducimus nulla quo.
             </p>
         </div>
         <a class="btn" href="#">Leer más</a>

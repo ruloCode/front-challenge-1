@@ -23,6 +23,19 @@
   background-color: var(--background-2);
   border: solid 1px var(--dark-color-2);
 }
+
+.card-container.color1 h4 {
+  color: #7ba0c8;
+}
+.card-container.color2 h4 {
+  color: #73aca5;
+}
+.card-container.color3 h4 {
+  color: #fbcb69;
+}
+.card-container.color4 h4 {
+  color: var(--brand-color-1);
+}
 .img-container {
   height: 0;
   overflow: hidden;

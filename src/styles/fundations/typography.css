@@ -20,6 +20,7 @@
   font-size: var(--font-size-title);
   color: var(--dark-color-1);
   border-bottom: 1px solid var(--dark-color-1);
+  font-size: 18px;
 }
 .normal {
   font-size: var(--font-normal);
