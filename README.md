@@ -5,9 +5,7 @@ This project has been created only with Vanilla Js, CSS and HTML and the layout 
 
 ## View Demo
 [Show Demo]()
-[click here](https://front-reto-1.now.sh/ "Show Demo"){:target="_blank"}
-
-
+[click here](https://front-reto-1.now.sh/ "Show Demo")
 ## Preview
 ![](/preview.png)
 
