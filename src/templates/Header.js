@@ -1,3 +1,4 @@
+const { setState , getState, toggleLocalStorage} = require('../utils/saveLocal')
 const Header = () => {
   const view = `
     <div id="Header" class="Header-main">
@@ -25,34 +26,17 @@ const Header = () => {
       </nav>
     </div>
   `;
-  const getState = (key) => {
-    return JSON.parse(window.localStorage.getItem(key));
-  };
-  const setState = (key, value) => {
-    return window.localStorage.setItem(key, JSON.stringify(value));
-  };
-  const setLocalStorage = async () => {
-    try {
-      const key = "color";
-      const localState = getState(key);
-      await setState(key, !localState);
-      const updateState = getState(key);
 
-      return updateState;
-    } catch (error) {
-      console.log(error);
-    }
-  };
   setTimeout(() => {
     const $NavLinks = document.getElementsByClassName("link-navbar");
     console.log($NavLinks);
     const id = 10;
     let count = 20;
 
-    setState("color", false);
+    setState("color", true);
     for (let i = 0; i < $NavLinks.length; i++) {
       $NavLinks[i].addEventListener("click", async () => {
-        const newStorage = await setLocalStorage();
+        const newStorage = await toggleLocalStorage('toggle');
         console.log(newStorage);
       });
     }

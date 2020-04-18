@@ -58,4 +58,8 @@
   .btn {
     width: 80%;
   }
+  .btnOn {
+    color: red
+  }
+  
 }

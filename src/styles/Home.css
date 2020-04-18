@@ -69,6 +69,9 @@ h4 {
   transition: 0.3s;
   color: #fff;
 }
+.btnOn {
+  color: red
+}
 .btn:hover {
   background: var(--brand-color-1);
 }

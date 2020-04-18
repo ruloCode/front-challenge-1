@@ -1,7 +1,11 @@
+const { getState } = require('../utils/saveLocal')
 const Footer = ({ news, services }) => {
+  const footerToggle = getState('toggle')
+  console.log(footerToggle)
+  
   const view = `
     
-    <div class="footer">
+    <div if="footer" class="footer">
       <div class="footer-target welcome">
         <h3 class="title">¡Bienvenido!</h3>
         <div>
@@ -51,14 +55,12 @@ const Footer = ({ news, services }) => {
               .join("")}
           </ol>
         </div>
-        <a class="btn" href="#">Leer más</a>
+        <a class="${footerToggle ? 'btn btnOn': 'btn'}" href="#">Leer más</a>
       </div>
   </div>
   `;
-  setTimeout(() => {
-    var data = sessionStorage.getItem("colorToggle");
-    console.log(data);
-  }, 7000);
+ 
+
   return view;
 };
 export default Footer;
