@@ -11,7 +11,7 @@ const routes = {
   "/contact": "Contacto",
 };
 
-const router = async () => {
+const router = async (toggleColor) => {
   const header = null || document.getElementById("header");
   const content = null || document.getElementById("content");
 

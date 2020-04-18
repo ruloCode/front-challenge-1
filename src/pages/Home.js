@@ -7,7 +7,7 @@ const Home = async () => {
   const data = await getData(API);
   const view = `
     <div class="Home">
-      <div class="titles-container">
+      <div id="titles2" class="titles-container">
         <h2 class="main-title">${data.title}</h2>
         <h3 class="main-subtitle">${data.subtitle}</h3>
       </div>

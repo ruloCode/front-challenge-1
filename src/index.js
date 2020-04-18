@@ -1,5 +1,17 @@
 import router from "./routes/index";
 
-window.addEventListener("load", router);
+const render = async () => {
+  try {
+    await window.addEventListener("load", router);
 
-window.addEventListener("hashchange", router);
+    await window.addEventListener("hashchange", router);
+  } catch (error) {
+    console.log(error);
+  }
+};
+render();
+
+
+
+
+

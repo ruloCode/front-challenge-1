@@ -55,6 +55,10 @@ const Footer = ({ news, services }) => {
       </div>
   </div>
   `;
+  setTimeout(() => {
+    var data = sessionStorage.getItem("colorToggle");
+    console.log(data);
+  }, 7000);
   return view;
 };
 export default Footer;
