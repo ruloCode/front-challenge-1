@@ -1,27 +1,48 @@
 import router from "./routes/index";
 
-const render = async () => {
-  try {
-    await window.addEventListener("load", router);
+const render = () => {
 
-    await window.addEventListener("hashchange", router);
+  return new Promise( (resolve, reject) => {
+
+    const addListeners = () => {
+      window.addEventListener("load", router);
+      window.addEventListener("hashchange", router);
+      return 'rendered'
+    }
+    (true)
+    ? resolve(addListeners())
     
-  } catch (error) {
-    console.log(error);
-  }
+    : reject(new Error('Error'))
+  })
+
 };
 
+const doRender = async () => {
+  try {
+    const rendering = await render() 
+    console.log(rendering)
+    if (rendering) {
+      setTimeout( () => {
+        let count = 0
+        const id = 17
 
-render();
+        const $ListOfItems = document.getElementsByClassName('link-navbar')
 
+        
+      for( let i = 0; i < $ListOfItems.length; i++) {
+        $ListOfItems[i].addEventListener('click', () => {
+          count++
+          console.log(`Id: ${id} count: ${count}`)
+        })
+      }
+        
+      }, 1000)
+      
+    }
+  } catch (error) {
+     console.log(error) 
+   }
+}
 
-setTimeout(() => {
-  const $listado = document.querySelectorAll(".link-navbar");
-  $listado.forEach((item) => {
-    item.addEventListener('click', () => {
-      console.log('Hablate te')
-    })
-  })
-    
-  console.log($listado)
-}, 6000)
+doRender()
+

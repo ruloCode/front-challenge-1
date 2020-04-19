@@ -15,7 +15,7 @@ const Header = () => {
 
         <menu class="Header-nav" >
 
-            <li  class="link-navbar"><a  href="#">Inicio</a></li>
+            <li id="item2"  class="link-navbar"><a  href="#">Inicio</a></li>
             <li  class="link-navbar"><a  href="#">Acerca</a></li>
             <li  class="link-navbar"><a  href="#">Servicios</a></li>
             <li  class="link-navbar"><a  href="#">Productos</a></li>
