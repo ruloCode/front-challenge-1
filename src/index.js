@@ -10,6 +10,18 @@ const render = async () => {
     console.log(error);
   }
 };
+
+
 render();
 
 
+setTimeout(() => {
+  const $listado = document.querySelectorAll(".link-navbar");
+  $listado.forEach((item) => {
+    item.addEventListener('click', () => {
+      console.log('Hablate te')
+    })
+  })
+    
+  console.log($listado)
+}, 6000)

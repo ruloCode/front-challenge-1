@@ -1,8 +1,7 @@
 const { getState } = require('../utils/saveLocal')
 const Footer = ({ news, services }) => {
-  const footerToggle = getState('toggle')
-  console.log(footerToggle)
-  
+ 
+ 
   const view = `
     
     <div if="footer" class="footer">
@@ -19,7 +18,8 @@ const Footer = ({ news, services }) => {
             vel! Debitis consequuntur dicta reiciendis harum ducimus nulla quo.
             </p>
         </div>
-        <a class="btn" href="#">Leer más</a>
+        <a class="btn link-navbar" href="#">Leer más</a>
+
       </div>
       <div class="footer-target news">
         <h3 class="title">Noticias Recientes</h3>
@@ -38,7 +38,7 @@ const Footer = ({ news, services }) => {
               )
               .join("")}
         </div>
-        <a class="btn" href="#">Más noticias</a>
+        <a class="btn link-navbar" href="#">Más noticias</a>
       </div>
       <div class="footer-target services">
         <h3 class="title">Nuestros Servicios</h3>
@@ -55,7 +55,7 @@ const Footer = ({ news, services }) => {
               .join("")}
           </ol>
         </div>
-        <a class="${footerToggle ? 'btn btnOn': 'btn'}" href="#">Leer más</a>
+        <a class="btn link-navbar" href="#">Leer más</a>
       </div>
   </div>
   `;
