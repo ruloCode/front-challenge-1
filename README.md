@@ -6,7 +6,7 @@ Is a beauty, responsive and clean landing page.
 
 
 ## View Demo
-[click here](https://front-reto-1.now.sh/ "Show Demo")
+[click here](https://front-reto-1.drewlizcano.now.sh/ "Show Demo")
 ## Preview
 ![](/preview.png)
 
