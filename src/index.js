@@ -45,7 +45,9 @@ const doRender = async () => {
           const Element = $ListOfItemsFooter[i]
           $ListOfItemsFooter[i].addEventListener('click', () => {
             Element.classList.toggle('toggle')
-            
+            for (let i = 0; i < $ListOfItemsHeader.length; i++) {
+              $ListOfItemsHeader[i].classList.toggle('toggle')
+            }
           })
       }
         
