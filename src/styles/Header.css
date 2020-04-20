@@ -21,6 +21,8 @@
   margin: 0 0.5em;
   transition: 0.3s;
   width: 100%;
+  height: 100%;
+
 }
 
 .Header-nav li a.active {

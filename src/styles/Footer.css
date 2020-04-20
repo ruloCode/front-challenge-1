@@ -18,6 +18,9 @@
   padding: 1em;
   margin-bottom: 1em;
 }
+.toggle-footer {
+  background: red;
+}
 .normal p {
   overflow: hidden;
 }

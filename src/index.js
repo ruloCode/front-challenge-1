@@ -41,12 +41,21 @@ const doRender = async () => {
 
         })
       }
+      for( let i = 0; i < $ListOfItemsHeader.length; i++) {
+        const Element = $ListOfItemsHeader[i]
+
+        $ListOfItemsHeader[i].addEventListener('click', () => {
+            for (let i = 0; i < $ListOfItemsFooter.length; i++) {
+              $ListOfItemsFooter[i].classList.toggle('toggle-footer')
+            }
+
+        })
+      }
       for( let i = 0; i < $ListOfItemsFooter.length; i++) {
           const Element = $ListOfItemsFooter[i]
           $ListOfItemsFooter[i].addEventListener('click', () => {
-            Element.classList.toggle('toggle')
             for (let i = 0; i < $ListOfItemsHeader.length; i++) {
-              $ListOfItemsHeader[i].classList.toggle('toggle')
+              $ListOfItemsHeader[i].classList.toggle('toggle-header')
             }
           })
       }

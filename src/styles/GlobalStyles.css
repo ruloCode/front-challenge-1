@@ -27,9 +27,10 @@ body {
   grid-gap: 0.5em;
   height: 100%;
 }
-.toggle {
+.toggle-header {
   background: red;
 }
+
 @media only screen and (max-width: 768px) {
   .Main {
     grid-template-rows: 13% auto auto;
