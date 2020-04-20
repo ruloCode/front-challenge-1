@@ -60,7 +60,6 @@ h4 {
 }
 
 .btn {
-  padding: 1em;
   width: 40%;
   background: var(--dark-color-1);
   display: flex;
@@ -70,7 +69,7 @@ h4 {
   color: #fff;
 }
 .btnOn {
-  color: red
+  color: red;
 }
 .btn:hover {
   background: var(--brand-color-1);

@@ -1,7 +1,5 @@
-const { getState } = require('../utils/saveLocal')
+const { getState } = require("../utils/saveLocal");
 const Footer = ({ news, services }) => {
- 
- 
   const view = `
     
     <div id="footer" class="footer-container">
@@ -18,7 +16,7 @@ const Footer = ({ news, services }) => {
             vel! Debitis consequuntur dicta reiciendis harum ducimus nulla quo.
             </p>
         </div>
-        <a class="btn link-navbar footer-item" href="#">Leer más</a>
+        <button class="btn link-navbar footer-item">Leer más</button>
 
       </div>
       <div class="footer-target news">
@@ -38,7 +36,7 @@ const Footer = ({ news, services }) => {
               )
               .join("")}
         </div>
-        <a class="btn link-navbar footer-item" href="#">Más noticias</a>
+        <button class="btn link-navbar footer-item" >Más noticias</button>
       </div>
       <div class="footer-target services">
         <h3 class="title">Nuestros Servicios</h3>
@@ -55,11 +53,10 @@ const Footer = ({ news, services }) => {
               .join("")}
           </ol>
         </div>
-        <a class="btn link-navbar footer-item" href="#">Leer más</a>
+        <button class="btn link-navbar footer-item" >Leer más</button>
       </div>
   </div>
   `;
- 
 
   return view;
 };
