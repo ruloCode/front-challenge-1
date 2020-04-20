@@ -1,10 +1,13 @@
-.footer {
+.footer-container {
   padding: 1em 3em;
   margin-bottom: 4em;
   display: grid;
   justify-content: center;
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(180px, 350px));
+}
+.toggle {
+  background: red;
 }
 .footer-target {
   display: grid;
@@ -39,7 +42,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .footer {
+  .footer-container {
     grid-gap: 0.3em;
 
     grid-template-columns: repeat(auto-fit, minmax(180px, 400px));

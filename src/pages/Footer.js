@@ -4,7 +4,7 @@ const Footer = ({ news, services }) => {
  
   const view = `
     
-    <div if="footer" class="footer">
+    <div id="footer" class="footer-container">
       <div class="footer-target welcome">
         <h3 class="title">¡Bienvenido!</h3>
         <div>
@@ -18,7 +18,7 @@ const Footer = ({ news, services }) => {
             vel! Debitis consequuntur dicta reiciendis harum ducimus nulla quo.
             </p>
         </div>
-        <a class="btn link-navbar" href="#">Leer más</a>
+        <a class="btn link-navbar footer-item" href="#">Leer más</a>
 
       </div>
       <div class="footer-target news">
@@ -38,7 +38,7 @@ const Footer = ({ news, services }) => {
               )
               .join("")}
         </div>
-        <a class="btn link-navbar" href="#">Más noticias</a>
+        <a class="btn link-navbar footer-item" href="#">Más noticias</a>
       </div>
       <div class="footer-target services">
         <h3 class="title">Nuestros Servicios</h3>
@@ -55,7 +55,7 @@ const Footer = ({ news, services }) => {
               .join("")}
           </ol>
         </div>
-        <a class="btn link-navbar" href="#">Leer más</a>
+        <a class="btn link-navbar footer-item" href="#">Leer más</a>
       </div>
   </div>
   `;
