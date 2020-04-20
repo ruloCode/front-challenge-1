@@ -45,15 +45,27 @@ const doRender = async () => {
         const Element = $ListOfItemsHeader[i]
 
         $ListOfItemsHeader[i].addEventListener('click', () => {
-            for (let i = 0; i < $ListOfItemsFooter.length; i++) {
-              $ListOfItemsFooter[i].classList.toggle('toggle-footer')
+          if ( $ListOfItemsHeader[i].classList.contains('toggle-header')) {
+            for (let i = 0; i < $ListOfItemsHeader.length; i++) {
+              $ListOfItemsHeader[i].classList.toggle('toggle-header')
             }
+
+          }
+          for (let i = 0; i < $ListOfItemsFooter.length; i++) {
+            $ListOfItemsFooter[i].classList.toggle('toggle-footer')
+          }
 
         })
       }
+
       for( let i = 0; i < $ListOfItemsFooter.length; i++) {
-          const Element = $ListOfItemsFooter[i]
           $ListOfItemsFooter[i].addEventListener('click', () => {
+            if ( $ListOfItemsFooter[i].classList.contains('toggle-footer')) {
+              for (let i = 0; i < $ListOfItemsFooter.length; i++) {
+                $ListOfItemsFooter[i].classList.toggle('toggle-footer')
+              }
+  
+            }
             for (let i = 0; i < $ListOfItemsHeader.length; i++) {
               $ListOfItemsHeader[i].classList.toggle('toggle-header')
             }
