@@ -26,6 +26,10 @@
 }
 .footer-target .btn {
   grid-area: show;
+  display: flex;
+
+  border: none;
+  outline: none;
 }
 .footer-target span {
   color: var(--brand-color-1);
@@ -62,8 +66,4 @@
   .btn {
     width: 80%;
   }
-  .btnOn {
-    color: red
-  }
-  
 }

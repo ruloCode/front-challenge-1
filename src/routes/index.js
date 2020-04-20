@@ -7,6 +7,7 @@ import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 const routes = {
   "/": Home,
+  "/#": Home,
   "/:id": Footer,
   "/contact": "Contacto",
 };
