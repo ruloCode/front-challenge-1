@@ -19,7 +19,7 @@ const Header = () => {
 
         <menu class="Header-nav" >
 
-            <li  class="link-navbar header-item active"><button>Inicio</button></li>
+            <li  class="link-navbar header-item active "><button>Inicio</button></li>
             <li  class="link-navbar header-item"><button>Acerca</button></li>
             <li  class="link-navbar header-item"><button>Servicios</button></li>
             <li  class="link-navbar header-item"><button>Productos</button></li>

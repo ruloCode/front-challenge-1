@@ -4,7 +4,6 @@ const render = () => {
   return new Promise((resolve, reject) => {
     const addListeners = () => {
       window.addEventListener("load", router);
-      window.addEventListener("hashchange", router);
       return "rendered";
     };
     true ? resolve(addListeners()) : reject(new Error("Error"));
