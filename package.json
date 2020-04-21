@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "now-build": "npm run build",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test": "cypress run",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },

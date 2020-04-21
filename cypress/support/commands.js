@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("Header", () => {
+  cy.visit('https://front-reto-1.now.sh/')
+  cy.get('.Header-logo').contains('Empresa').should('be.visible')
+  cy.get('.header-item').contains('Inicio').should('be.visible')
+  cy.get('.header-item').contains('Acerca').should('be.visible')
+  cy.get('.header-item').contains('Servicios').should('be.visible')
+  cy.get('.header-item').contains('Productos').should('be.visible')
+  cy.get('.header-item').contains('Contacto').should('be.visible')
+})
